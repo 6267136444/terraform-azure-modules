@@ -19,6 +19,9 @@ variable "admin_username" {
 }
 
 variable "admin_password" {
-  type      = string
-  sensitive = true
+  type = string
+}
+
+variable "nic_id" {
+  type = string
 }
