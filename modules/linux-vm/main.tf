@@ -73,7 +73,7 @@ resource "azurerm_linux_virtual_machine" "web_vm" {
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
-    disk_size_gb         = 100
+    disk_size_gb         = 70
   }
 
   source_image_reference {
@@ -101,7 +101,7 @@ resource "azurerm_linux_virtual_machine" "db_vm" {
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
-    disk_size_gb         = 100
+    disk_size_gb         = 70
   }
 
   source_image_reference {
