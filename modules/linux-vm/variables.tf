@@ -1,5 +1,24 @@
+variable "location" {
+  type = string
+}
+
+variable "resource_group_name" {
+  type = string
+}
+
+variable "vm_name" {
+  type = string
+}
+
+variable "vm_size" {
+  type = string
+}
+
+variable "admin_username" {
+  type = string
+}
+
 variable "admin_password" {
-  description = "VM Admin Password"
-  type        = string
-  sensitive   = true
+  type      = string
+  sensitive = true
 }
