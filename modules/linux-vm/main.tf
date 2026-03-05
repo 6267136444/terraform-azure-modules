@@ -64,6 +64,7 @@ resource "azurerm_linux_virtual_machine" "web_vm" {
   location            = azurerm_resource_group.rg.location
   size                = "Standard_D2as_v5"
   admin_username      = "azureuser"
+  admin_password = var.admin_password
 
   network_interface_ids = [
     azurerm_network_interface.web_nic.id
@@ -91,6 +92,7 @@ resource "azurerm_linux_virtual_machine" "db_vm" {
   location            = azurerm_resource_group.rg.location
   size                = "Standard_D4als_v6"
   admin_username      = "azureuser"
+  admin_password = var.admin_password
 
   network_interface_ids = [
     azurerm_network_interface.db_nic.id
